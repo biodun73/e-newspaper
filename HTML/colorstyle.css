@@ -1,0 +1,230 @@
+/*default */
+*{
+   
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*body background color*/
+body{
+   width: 100%;
+    background-color:#f1f1f1;
+}
+@media only screen and (min-width:360px){
+       body{
+           width: 100%;
+       }
+}
+
+/*position the images including the text in grid form*/
+.home{
+    display:grid;
+    grid-template-columns: auto;
+}
+
+/* header position*/
+.heading{
+    width: 100%;
+    height: 160px;
+    background-color: #9b1919;
+}
+
+@media only screen and (max-width:360px){
+   .heading{
+        width: 100%;
+        margin-left: 20px;
+        padding: 10px;
+    }
+}
+/*title and the logo position set up*/
+.head-title{
+    margin:auto;
+}
+
+/*color and left marging for logo*/
+.head-title h1{
+    margin-left: 250px;
+    color: #f1f1f1;
+}
+
+/*tab position arragement*/
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+/* tab position arragement*/
+.nav ul li a{
+    color: #f1f1f1 ;
+    margin-left: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/*admin dashboad set up*/
+.admin{
+    margin-top: 60px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+/*admin dashboad set up*/
+.admin form{
+    margin-top: 10px;
+    margin-left: 520px;
+    margin-bottom: 80px;
+}
+
+/*admin dashboad  tab set up and position*/
+.adminav{
+    width: 100%;
+    height: 100px;
+    color: #f1f1f1;
+    background-color: #9b1919;
+}
+.adminav a{
+    color:#f1f1f1;
+    margin-left: 10px;
+    text-decoration: none;
+}
+  /*hide the tabs*/
+.hid{
+    display: none;
+}
+
+/*show the tab*/
+ul li:hover .hid{
+    line-height: 20px;
+    display: block;
+    color: #f1f1f1;
+}
+
+/*admin dashboad set up and position*/
+
+.admin2{
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-bottom: 30px;
+}
+
+/*admin dashboad set up and position*/
+.admin2 h3{
+    margin-left:152px;
+}
+/*footer set up*/
+.foot{
+    width: 100%;
+    height: 100px;
+    color: #f1f1f1;
+    overflow: hidden;
+    background-color: #9b1919;
+    
+}
+
+/*set up category tab nav.*/
+.catbar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9b1919;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*set up category tab nav.*/
+.catbar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fffdfd;
+    display: block;
+    transition: 0.3s;
+}
+
+/*hover on  to display category.*/
+.catbar  a:hover {
+    color: #f1f1f1;
+  }
+  
+  /*close the category*/
+  .catbar .buttonClose {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /*hover on categ.display button*/
+  .buttonOpen:hover {
+    background-color: #444;
+  }
+
+  /*size of open categ. button*/
+  .buttonOpen {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 3px 2px;
+    border: none;
+  }
+  #main {
+    transition: margin-left .5s;
+
+  }
+  @media screen and (max-height: 450px) {
+    .catbar {padding-top: 15px;}
+    .catbar a {font-size: 18px;}
+  }
+  /*admin login*/
+  .log_admin{
+      max-width: 100%;
+      height: 200px;
+      font-size: 25px;
+      margin: 25px;
+  }  
+  .log_admin h3{
+     text-align: center;
+  }
+  input[type='text']{
+      width:220px;
+      height: 30px;
+  }
+  input[type='password']{
+    width:220px;
+    height: 30px;
+}
+input[type='submit']{
+    width:200px;
+    height: 30px;
+}
+.ad_page h1{
+    text-align: center;
+}
+.regis{
+    margin-top: 120px;
+}
+#field{
+ color: #111;
+ font-size: 20px;
+}
+
+fieldset{
+    max-width: 100%;
+    height: 430px;
+    margin: 10px;
+    padding: 10px;
+}
+.upload{
+    max-width: 800px;
+    margin-left: 300px;
+    height: 460px;
+}
